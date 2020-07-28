@@ -7,6 +7,7 @@ class Blender
   def blend (speed)
     puts "Spinning on #{speed} setting."
   end
+
 end
 
 blender = Blender.new
