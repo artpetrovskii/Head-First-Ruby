@@ -6,14 +6,14 @@ class Dog
     if value == ""
       raise "Name can't be blank!"
     end
-  @name = value
+@name = value
   end
 
   def age=(value)
     if value < 0
       raise "An age of #{value} isn't valid!"
     end
-  @age = value
+@age = value
   end
 
   def move(destination)
