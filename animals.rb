@@ -1,7 +1,8 @@
 class Bird
   def talk(name)
-    puts "#{name} says Chirp! Chirp!"
+    puts "#{name} says Chirp!"
   end
+
   def move(name, destination)
     puts "#{name} flies to #{destination}."
   end
@@ -11,6 +12,7 @@ class Dog
   def talk(name)
     puts "#{name} says Bark!"
   end
+
   def move(name, destination)
     puts "#{name} runs to #{destination}."
   end
@@ -20,6 +22,7 @@ class Cat
   def talk(name)
     puts "#{name} says Meow!"
   end
+
   def move(name, destination)
     puts "#{name} runs to the #{destination}."
   end
@@ -29,7 +32,7 @@ bird = Bird.new
 dog = Dog.new
 cat = Cat.new
 
-bird.move("tree")
-dog.talk
-bird.talk
-cat.move("house")
+bird.move('A bird', 'home')
+dog.talk('A dog')
+bird.talk('A bird')
+cat.move('A cat', 'home')
