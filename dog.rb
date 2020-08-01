@@ -1,11 +1,12 @@
 class Dog
-
   attr_reader :name, :age
 
   def name=(value)
-    if value == ""
+    if value == ''
       raise "Name can't be blank!"
+
     end
+
 @name = value
   end
 
@@ -13,6 +14,7 @@ class Dog
     if value < 0
       raise "An age of #{value} isn't valid!"
     end
+
 @age = value
   end
 
@@ -27,12 +29,11 @@ class Dog
   def report_age
     puts "#{@name} is #{@age} years old."
   end
-
 end
 
 dog = Dog.new
-dog.name = "Daisy"
+dog.name = 'Daisy'
 dog.age = 3
 dog.report_age
 dog.talk
-dog.move("bed")
+dog.move('bed')
