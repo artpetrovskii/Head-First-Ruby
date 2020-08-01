@@ -7,7 +7,7 @@ puts "Welcome, #{name}!"
 
 puts 'I have got a random number between 1 and 100.'
 puts 'Can you guess it?'
-target = rand(100) + 1
+target = rand(1..100)
 
 num_guesses = 0
 
