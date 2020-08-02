@@ -14,7 +14,7 @@ def use_headlights(brightness = 'low-beam')
 end
 
 def mileage(miles_driven, gas_used)
-  if gas_used == 0
+  if gas_used.zero?
     return 0.0
   end
 
@@ -27,7 +27,8 @@ def buy_coffee(flavor, size = 'medium', quantity = 1)
   else
     plural = 'Some cups of coffee'
   end
-    puts "#{quantity} #{size} #{flavor} #{plural}, coming right up!"
+
+  puts "#{quantity} #{size} #{flavor} #{plural}, coming right up!"
 end
 
 sound_horn
