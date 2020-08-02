@@ -2,20 +2,15 @@ class Dog
   attr_reader :name, :age
 
   def name=(value)
-    if value == ''
-      raise "Name can't be blank!"
+    raise "Name can't be blank!" if value == ''
 
-    end
-
-@name = value
+    @name = value
   end
 
   def age=(value)
-    if value.negative?
-      raise "An age of #{value} isn't valid!"
-    end
+    raise "An age of #{value} isn't valid!" if value.negative?
 
-@age = value
+    @age = value
   end
 
   def move(destination)

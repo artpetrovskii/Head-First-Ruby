@@ -1,11 +1,7 @@
 class MyClass
-  def my_attribute=(new_value)
-    @my_attribute = new_value
-  end
+  attr_writer :my_attribute
 
-  def my_attribute
-    @my_attribute
-  end
+  attr_reader :my_attribute
 end
 
 my_instance = MyClass.new

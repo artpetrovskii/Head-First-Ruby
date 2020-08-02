@@ -1,11 +1,7 @@
 class Robot
-  def head
-    @head
-  end
+  attr_reader :head
 
-  def arms=(value)
-    @arms = value
-  end
+  attr_writer :arms
 
   attr_reader :legs, :body
   attr_writer :eyes
