@@ -11,7 +11,7 @@ class Dog
   end
 
   def age=(value)
-    if value.negative?
+    if value < 0
       raise "An age of #{value} isn't valid!"
     end
 
