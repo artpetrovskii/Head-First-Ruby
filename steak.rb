@@ -1,8 +1,8 @@
+# Steak class
 class Steak
-
   include Comparable
 
-  GRADE_SCORES = {"Prime" => 3, "Choice" => 2, "Select" => 1}
+  GRADE_SCORES = {'Prime' => 3, 'Choice' => 2, 'Select' => 1}
 
   attr_accessor :grade
 
@@ -15,20 +15,19 @@ class Steak
       return 1
     end
   end
-
 end
 
 prime = Steak.new
-prime.grade = "Prime"
+prime.grade = 'Prime'
 choice = Steak.new
-choice.grade = "Choice"
+choice.grade = 'Choice'
 select = Steak.new
-select.grade = "Select"
+select.grade = 'Select'
 
 puts "prime > choice: #{prime > choice}"
 puts "prime < select: #{prime < select}"
 puts "select == select: #{select == select}"
 puts "select <= select: #{select <= select}"
 puts "select >= choice: #{select >= choice}"
-print "choice.between?(select, prime): "
+print 'choice.between?(select, prime): '
 puts choice.between?(select, prime)
