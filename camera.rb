@@ -1,22 +1,19 @@
+# Camera class
 class Camera
-
   def take_picture
-    puts "Triggering shutter."
+    puts 'Triggering shutter.'
   end
 
   def load
-    puts "Winding film."
+    puts 'Winding film.'
   end
-
 end
 
-
-class DigitalCamera < Camera 
-  
+# DigitalCamera class
+class DigitalCamera < Camera
   def load
-    puts "Inserting memory card."
+    puts 'Inserting memory card.'
   end
-
 end
 
 camera = Camera.new

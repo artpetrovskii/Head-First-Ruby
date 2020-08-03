@@ -1,29 +1,29 @@
+# Vehicle class
 class Vehicle
-
   attr_accessor :odometer
   attr_accessor :gas_used
 
   def accelerate
-    puts "Floor it!"
+    puts 'Floor it!'
   end
 
   def sound_horn
-    puts "Beep! Beep!"
+    puts 'Beep! Beep!'
   end
 
   def steer
-    puts "Turn front 2 wheels."
+    puts 'Turn front 2 wheels.'
   end
 
   def mileage
     return @odometer / @gas_used
   end
-
 end
 
 class Car < Vehicle
 end
 
+# Truck class
 class Truck < Vehicle
   attr_accessor :cargo
 
@@ -33,9 +33,10 @@ class Truck < Vehicle
   end
 end
 
+# Motorcycle class
 class Motorcycle < Vehicle
   def steer
-    puts "Turn front wheel."
+    puts 'Turn front wheel.'
   end
 end
 
@@ -44,14 +45,14 @@ truck.accelerate
 truck.steer
 
 car = Car.new
-car.odometer = 11432
+car.odometer = 11_432
 car.gas_used = 366
 
-puts "Lifetime MPG:"
+puts 'Lifetime MPG:'
 puts car.mileage
 
 truck = Truck.new
-truck.load_bed("259 bouncy balls")
+truck.load_bed('259 bouncy balls')
 puts "The truck is carrying #{truck.cargo}."
 
 motorcycle = Motorcycle.new
