@@ -1,10 +1,7 @@
 # Widget class
 class Widget
-  def set_size
-    @size = 'large'
-  end
-
   def show_size
+    @size = 'large'
     puts "Size: #{@size}"
   end
 end
