@@ -1,3 +1,4 @@
+# Bird class
 class Bird
   def talk(name)
     puts "#{name} says Chirp!"
@@ -8,6 +9,7 @@ class Bird
   end
 end
 
+# Dog class
 class Dog
   def talk(name)
     puts "#{name} says Bark!"
@@ -18,6 +20,7 @@ class Dog
   end
 end
 
+# Cat class
 class Cat
   def talk(name)
     puts "#{name} says Meow!"

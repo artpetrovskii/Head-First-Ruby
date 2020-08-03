@@ -1,3 +1,4 @@
+# Widget class
 class Widget
   def set_size
     @size = 'large'

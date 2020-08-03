@@ -1,3 +1,4 @@
+# MyClass class
 class MyClass
   attr_writer :my_attribute
 

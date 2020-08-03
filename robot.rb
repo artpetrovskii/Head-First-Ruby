@@ -1,3 +1,4 @@
+# Robot class
 class Robot
   attr_reader :head
 

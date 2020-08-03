@@ -1,3 +1,4 @@
+# Blender class
 class Blender
   def close_lid
     puts 'Sealed tight!'
